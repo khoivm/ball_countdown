@@ -1,22 +1,0 @@
-{:uriI"file://app/assets/semantic/tasks/config/admin/templates/package.json?type=application/json&id=dd3266a69026ef4165ed9af1779de23b22e0e0ef86aaeff56b83ae518f076064:ET:load_pathI"app/assets/semantic;T:filenameI"Bapp/assets/semantic/tasks/config/admin/templates/package.json;T:	nameI")tasks/config/admin/templates/package;T:logical_pathI".tasks/config/admin/templates/package.json;T:content_typeI"application/json;T:sourceI"ğ{
-  "name": "semantic",
-  "version": "1.0.0",
-  "title": "Semantic UI",
-  "description": "Semantic empowers designers and developers by creating a shared vocabulary for UI.",
-  "homepage": "http://www.semantic-ui.com",
-  "author": "Jack Lukic <jack@semantic-ui.com>",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/Semantic-Org/Semantic-UI.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Semantic-Org/Semantic-UI/issues"
-  },
-  "devDependencies": {}
-}
-;T:metadata{	:dependencieso:Set:
-@hash}
-I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"Pfile-digest://app/assets/semantic/tasks/config/admin/templates/package.json;TTF:charsetI"
-utf-8;F:digest"%‡’ÙÈŸD~“IbTFïboÔµ¡ün¸ˆkóegÔN:lengthiğ:dependencies_digest"%EKpn{17.ˆƒépÖ:kjŒ©Ç¹âİkw»:idI"Edd3266a69026ef4165ed9af1779de23b22e0e0ef86aaeff56b83ae518f076064;F:
-mtimel+÷Ò[Y
