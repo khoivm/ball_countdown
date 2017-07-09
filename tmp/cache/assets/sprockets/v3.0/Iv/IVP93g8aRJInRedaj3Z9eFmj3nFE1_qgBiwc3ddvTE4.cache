@@ -1,0 +1,34 @@
+I"ô(function() {
+  var pageLoad;
+
+  pageLoad = function() {
+    var action, error, homepage;
+    action = $('body').attr('data-class-name');
+    return window.applicationView = (function() {
+      try {
+        alert(action + "()");
+        return eval(action + "()");
+      } catch (error1) {
+        error = error1;
+        homepage = new Controllers.Homepage();
+        return new homepage.show();
+      }
+    })();
+  };
+
+  head(function() {
+    return $(function() {
+      pageLoad();
+      $(document).on('page:load', pageLoad);
+      $(document).on('page:before-change', function() {
+        return true;
+      });
+      return $(document).on('page:restore', function() {
+        pageLoad();
+        return true;
+      });
+    });
+  });
+
+}).call(this);
+:ET

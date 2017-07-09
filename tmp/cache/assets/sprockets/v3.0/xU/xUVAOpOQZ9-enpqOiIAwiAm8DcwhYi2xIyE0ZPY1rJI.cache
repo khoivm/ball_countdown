@@ -1,0 +1,11 @@
+I"¸(function() {
+  var pageLoad;
+
+  pageLoad = function() {
+    return $('a.sidebar-toggle').click(function() {
+      return $('#sidebar').sidebar('toggle');
+    });
+  };
+
+}).call(this);
+:ET

@@ -1,0 +1,77 @@
+{:uriI"‚file://app/assets/semantic/semantic.json?type=application/json&id=038097fbbb1c68c97e4177e8e20aa99c955eda177ecc857c941df6019415caad:ET:load_pathI"app/assets/semantic;T:filenameI"&app/assets/semantic/semantic.json;T:	nameI"semantic;T:logical_pathI"semantic.json;T:content_typeI"application/json;T:sourceI"‰{
+  "base": "semantic/",
+  "paths": {
+    "source": {
+      "config": "src/theme.config",
+      "definitions": "src/definitions/",
+      "site": "src/site/",
+      "themes": "src/themes/"
+    },
+    "output": {
+      "packaged": "dist/",
+      "uncompressed": "dist/components/",
+      "compressed": "dist/components/",
+      "themes": "dist/themes/"
+    },
+    "clean": "dist/"
+  },
+  "permission": false,
+  "autoInstall": false,
+  "rtl": false,
+  "components": [
+    "reset",
+    "site",
+    "button",
+    "container",
+    "divider",
+    "flag",
+    "header",
+    "icon",
+    "image",
+    "input",
+    "label",
+    "list",
+    "loader",
+    "rail",
+    "reveal",
+    "segment",
+    "step",
+    "breadcrumb",
+    "form",
+    "grid",
+    "menu",
+    "message",
+    "table",
+    "ad",
+    "card",
+    "comment",
+    "feed",
+    "item",
+    "statistic",
+    "accordion",
+    "checkbox",
+    "dimmer",
+    "dropdown",
+    "embed",
+    "modal",
+    "nag",
+    "popup",
+    "progress",
+    "rating",
+    "search",
+    "shape",
+    "sidebar",
+    "sticky",
+    "tab",
+    "transition",
+    "api",
+    "form",
+    "state",
+    "visibility"
+  ],
+  "version": "2.2.10"
+};T:metadata{	:dependencieso:Set:
+@hash}
+I"environment-version;TTI"environment-paths;TTI"rails-env;TTI"@processors:type=application/json&file_type=application/json;TTI"4file-digest://app/assets/semantic/semantic.json;TTF:charsetI"
+utf-8;F:digest"%ÚÆ™†à'Î»z˜®á“*°òàHVH‹ò‘×¢8˜¨:lengthi‰:dependencies_digest"%å¤“äç0ÛG¯š¨ÎX‡„¬Øm®×hÿ§/&6÷û`:idI"E038097fbbb1c68c97e4177e8e20aa99c955eda177ecc857c941df6019415caad;F:
+mtimel+÷Ò[Y

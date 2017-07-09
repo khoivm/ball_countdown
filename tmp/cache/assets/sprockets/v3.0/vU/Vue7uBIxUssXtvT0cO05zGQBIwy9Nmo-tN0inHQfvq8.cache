@@ -1,0 +1,16 @@
+I"/(function() {
+  window.Views || (window.Views = {});
+
+  Views.ApplicationView = (function() {
+    function ApplicationView() {
+      $("#main_setting_icon").on('click', function() {
+        return $('.ui.sidebar').sidebar('toggle');
+      });
+    }
+
+    return ApplicationView;
+
+  })();
+
+}).call(this);
+:ET

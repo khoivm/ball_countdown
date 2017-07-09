@@ -1,0 +1,25 @@
+I"ì(function() {
+  var base,
+    extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  (base = window.Controllers).Gumtree || (base.Gumtree = {});
+
+  Controllers.Gumtree = (function(superClass) {
+    extend(Gumtree, superClass);
+
+    function Gumtree() {}
+
+    Gumtree.prototype.Index = function() {
+      var index;
+      alert('123');
+      index = new Views.Gumtree();
+      return index.show();
+    };
+
+    return Gumtree;
+
+  })(Controllers.ApplicationController);
+
+}).call(this);
+:ET

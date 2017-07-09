@@ -1,0 +1,35 @@
+I"x(function() {
+  var pageLoad;
+
+  pageLoad = function() {
+    var action_name, class_name, controller, error, homepage;
+    class_name = $('body').attr('data-class-name');
+    action_name = $('body').attr('data-action-name');
+    return window.applicationView = (function() {
+      try {
+        controller = eval("new " + class_name + "()");
+        return eval(controller + "." + action_name + "()");
+      } catch (error1) {
+        error = error1;
+        homepage = new Controllers.Homepage();
+        return homepage.show();
+      }
+    })();
+  };
+
+  head(function() {
+    return $(function() {
+      pageLoad();
+      $(document).on('page:load', pageLoad);
+      $(document).on('page:before-change', function() {
+        return true;
+      });
+      return $(document).on('page:restore', function() {
+        pageLoad();
+        return true;
+      });
+    });
+  });
+
+}).call(this);
+:ET

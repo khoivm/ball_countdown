@@ -1,0 +1,22 @@
+I"—(function() {
+  window.Views || (window.Views = {});
+
+  Views.ApplicationView = (function() {
+    var _set_up_elements;
+
+    function ApplicationView() {
+      _set_up_elements();
+    }
+
+    _set_up_elements = function() {
+      return $("#main_setting_icon").on('click', function() {
+        return $('.ui.sidebar').sidebar('toggle');
+      });
+    };
+
+    return ApplicationView;
+
+  })();
+
+}).call(this);
+:ET

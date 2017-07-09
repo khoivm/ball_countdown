@@ -1,0 +1,12 @@
+I"Ú(function() {
+  window.Controllers || (window.Controllers = {});
+
+  Controllers.ApplicationController = (function() {
+    function ApplicationController() {}
+
+    return ApplicationController;
+
+  })();
+
+}).call(this);
+:ET

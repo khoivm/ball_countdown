@@ -1,0 +1,12 @@
+I"¼(function() {
+  window.Models || (window.Models = {});
+
+  Models.ApplicationModel = (function() {
+    function ApplicationModel() {}
+
+    return ApplicationModel;
+
+  })();
+
+}).call(this);
+:ET

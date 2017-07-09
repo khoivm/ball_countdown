@@ -1,0 +1,31 @@
+- content_for :title do
+  Gumtree Grab
+
+.ui.main.container
+  %h1.ui.header
+    Gumtree Grab
+  .ui.stackable.grid.two.column
+    .eight.wide.column
+      .ui.grid
+        .row.container
+          .ui.form
+            .inline.field
+              %input{type: "text", name: 'watcher', placeHolder: 'Input a watcher'}
+              #save_watcher.ui.submit.button
+                Submit
+
+        %h4.ui.dividing.header.row
+          Watchers
+        #watchers
+          - @watchers.each do |watcher|
+            .ui.teal.tag.label{data: {id: watcher.id}}
+              = watcher.name
+        %h4.ui.dividing.header.row
+          Result
+        #matches_list.ui.items.divided{style: 'width: 100%'}
+    .column
+      .ui.raised.segment
+        #progress.ui.top.attached.indicating.progress
+          .bar
+        #gumtree_list.ui.items.divided{data: {template: render("item_template").gsub("\n", "")}}
+

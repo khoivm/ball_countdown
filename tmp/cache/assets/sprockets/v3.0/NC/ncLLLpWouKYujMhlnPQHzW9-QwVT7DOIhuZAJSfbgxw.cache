@@ -1,0 +1,12 @@
+I"¶(function() {
+  window.Views || (window.Views = {});
+
+  Views.ApplicationView = (function() {
+    function ApplicationView() {}
+
+    return ApplicationView;
+
+  })();
+
+}).call(this);
+:ET

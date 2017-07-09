@@ -1,0 +1,12 @@
+I"Ê(function() {
+  var pageLoad;
+
+  pageLoad = function() {
+    alert('123');
+    return $('a.sidebar-toggle').click(function() {
+      return $('#sidebar').sidebar('toggle');
+    });
+  };
+
+}).call(this);
+:ET

@@ -1,0 +1,28 @@
+I"T(function() {
+  var pageLoad;
+
+  pageLoad = function() {
+    var homepage;
+    $("#main_setting_icon").on('click', function() {
+      return $('.ui.sidebar').sidebar('toggle');
+    });
+    homepage = new Controllers.Homepage();
+    return homepage.show();
+  };
+
+  head(function() {
+    return $(function() {
+      pageLoad();
+      $(document).on('page:load', pageLoad);
+      $(document).on('page:before-change', function() {
+        return true;
+      });
+      return $(document).on('page:restore', function() {
+        pageLoad();
+        return true;
+      });
+    });
+  });
+
+}).call(this);
+:ET

@@ -1,0 +1,43 @@
+I"L(function() {
+  var extend = function(child, parent) { for (var key in parent) { if (hasProp.call(parent, key)) child[key] = parent[key]; } function ctor() { this.constructor = child; } ctor.prototype = parent.prototype; child.prototype = new ctor(); child.__super__ = parent.prototype; return child; },
+    hasProp = {}.hasOwnProperty;
+
+  window.Gumtree || (window.Gumtree = {});
+
+  Views.Gumtree = (function(superClass) {
+    var show_gumtree_items;
+
+    extend(Gumtree, superClass);
+
+    function Gumtree() {
+      Gumtree.__super__.constructor.apply(this, arguments);
+    }
+
+    Gumtree.prototype.show = function() {
+      return show_gumtree_items();
+    };
+
+    show_gumtree_items = function() {
+      var response;
+      response = Models.Sync.getGumtreeItems();
+      return response.done(function(items) {
+        var i, item, len, results, template;
+        template = $('#gumtree_list').data('template');
+        results = [];
+        for (i = 0, len = items.length; i < len; i++) {
+          item = items[i];
+          console.log(item);
+          template.replace(new RegExp(/_header/g), item.title);
+          template.replace(new RegExp(/_img_src/g), item.img);
+          results.push($('#gumtree_list').append(template));
+        }
+        return results;
+      });
+    };
+
+    return Gumtree;
+
+  })(Views.ApplicationView);
+
+}).call(this);
+:ET

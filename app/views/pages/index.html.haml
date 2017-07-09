@@ -1,0 +1,35 @@
+- content_for :title do
+  Homepage
+
+.ui.main.container
+  %h1.ui.header
+    Homepage
+  .ui.relaxed.items
+    - @names.each do |name|
+      .item
+        .ui.image
+          .ui.card
+            .content
+              .right.floated.meta 14h
+              %img.ui.avatar.image{:src => "/uploads/#{name}.jpg"}/
+              Elliot
+            .image
+              %img.ui.wireframe.image{:src => "/uploads/#{name}.jpg"}/
+            .content
+              %span.right.floated
+                %i.heart.outline.like.icon
+                17 likes
+              %i.comment.icon
+              3 comments
+
+        .content
+          .header
+            header
+          .meta
+            meta
+          .description
+            description
+          .extra
+            dafsf
+
+
