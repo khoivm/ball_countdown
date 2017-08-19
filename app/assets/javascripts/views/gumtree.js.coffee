@@ -105,7 +105,7 @@ class Views.Gumtree extends Views.ApplicationView
         template = template.replace(new RegExp(/_image_src/g), item.img)
         template = template.replace(new RegExp(/_description/g), item.description)
         template = template.replace(new RegExp(/_time/g), item.time)
-        template = template.replace(new RegExp(/_area/g), item.area)
+#        template = template.replace(new RegExp(/_area/g), item.area)
         template = template.replace(new RegExp(/_location/g), item.location)
         template = template.replace(new RegExp(/_link/g), item.link)
         template = template.replace(new RegExp(/_g_id/g), item.g_id)
